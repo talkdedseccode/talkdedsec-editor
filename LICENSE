@@ -1,21 +1,171 @@
-MIT License
+Talkdedsec — Son Kullanıcı Lisans Sözleşmesi
+Talkdedsec — End User License Agreement
 
-Copyright (c) 2026 Talkdedsec
+Sürüm 1.0 · 28 Temmuz 2026
+Telif Hakkı (c) 2026 Talkdedsec. Tüm hakları saklıdır.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+--------------------------------------------------------------------------------
+TÜRKÇE
+--------------------------------------------------------------------------------
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+1. KAPSAM
+
+Bu sözleşme, Talkdedsec kod editörünün ("Yazılım") ikili (binary) dağıtımının
+kullanımını düzenler. Yazılımı kurarak veya kullanarak bu şartları kabul etmiş
+olursunuz. Kabul etmiyorsanız Yazılımı kurmayın ve kullanmayın.
+
+Yazılım AÇIK KAYNAK DEĞİLDİR. Kaynak kodu yayımlanmamıştır ve bu sözleşme size
+kaynak kod üzerinde hiçbir hak vermez.
+
+2. VERİLEN HAKLAR
+
+a) Kişisel kullanım: Bireysel, ticari olmayan kullanım için Yazılımı ücretsiz
+   olarak kurabilir ve kullanabilirsiniz. Sayı sınırı yoktur.
+
+b) Ticari kullanım: Yazılımın bir işletme adına, gelir getiren bir iş için veya
+   bir kurum bünyesinde kullanımı geçerli bir lisans anahtarı gerektirir.
+   Lisans anahtarı, satın alma sırasında belirtilen kullanıcı ve cihaz sayısıyla
+   sınırlıdır.
+
+c) Değerlendirme: Ticari bir lisans satın almadan önce Yazılımı makul bir süre
+   değerlendirme amacıyla kullanabilirsiniz.
+
+3. KISITLAMALAR
+
+Aşağıdakileri yapamazsınız:
+
+a) Yazılımı yeniden dağıtmak, satmak, kiralamak, ödünç vermek, alt lisanslamak
+   veya üçüncü taraflara sunmak.
+b) Yazılımı tersine mühendislikle çözümlemek, kaynak koda dönüştürmek veya
+   parçalarına ayırmak (yürürlükteki hukukun bu kısıtlamayı geçersiz kıldığı
+   ölçüde hariç).
+c) Lisans doğrulama, bütünlük denetimi veya kopya koruma mekanizmalarını
+   devre dışı bırakmak, atlatmak veya değiştirmek.
+d) Telif hakkı bildirimlerini, marka işaretlerini veya bu sözleşmeyi kaldırmak
+   ya da değiştirmek.
+e) Yazılımı temel alan türev bir ürün üretip dağıtmak.
+
+4. ÜÇÜNCÜ TARAF BİLEŞENLER
+
+Yazılım, kendi lisansları altında dağıtılan üçüncü taraf açık kaynak bileşenler
+içerir. Bu bileşenlerin telif hakkı bildirimleri ve lisans metinleri Yazılıma
+dahildir ve THIRD-PARTY-NOTICES dosyasında listelenir. Söz konusu bileşenler için
+ilgili açık kaynak lisansının şartları, bu sözleşmenin şartlarına üstün gelir.
+
+5. VERİ VE GİZLİLİK
+
+Yazılım telemetri toplamaz ve açılışta hiçbir sunucuya bağlanmaz. İnternet
+bağlantısı olmadan tam işlevle çalışır. Güncelleme denetimi varsayılan olarak
+kapalıdır ve yalnızca kullanıcı tarafından açıldığında ağ isteği yapar.
+
+Yazılımın içine gömülü yapay zekâ ajanını kullanmayı seçerseniz, ilgili istekler
+sizin kendi hesabınız üzerinden ilgili sağlayıcıya gider ve o sağlayıcının
+gizlilik politikasına tabidir. Bu, sizin isteğinizle başlayan bir işlemdir.
+
+6. GARANTİ REDDİ
+
+YAZILIM "OLDUĞU GİBİ" SUNULUR. AÇIK VEYA ZIMNİ HİÇBİR GARANTİ VERİLMEZ; BUNA
+TİCARETE ELVERİŞLİLİK, BELİRLİ BİR AMACA UYGUNLUK VE İHLAL ETMEME GARANTİLERİ
+DAHİLDİR.
+
+7. SORUMLULUK SINIRI
+
+YÜRÜRLÜKTEKİ HUKUKUN İZİN VERDİĞİ AZAMİ ÖLÇÜDE, TELİF HAKKI SAHİBİ; YAZILIMIN
+KULLANIMINDAN VEYA KULLANILAMAMASINDAN DOĞAN HİÇBİR DOĞRUDAN, DOLAYLI, ARIZİ,
+ÖZEL VEYA SONUÇSAL ZARARDAN SORUMLU TUTULAMAZ.
+
+8. FESİH
+
+Bu sözleşmenin şartlarını ihlal etmeniz hâlinde size verilen haklar kendiliğinden
+sona erer. Fesih hâlinde Yazılımın tüm kopyalarını silmeniz gerekir.
+
+9. UYGULANACAK HUKUK
+
+Bu sözleşme Türkiye Cumhuriyeti hukukuna tabidir.
+
+10. İLETİŞİM
+
+https://code.talkdedsec.com
+https://github.com/talkdedseccode/talkdedsec-editor
+
+--------------------------------------------------------------------------------
+ENGLISH
+--------------------------------------------------------------------------------
+
+1. SCOPE
+
+This agreement governs the use of the binary distribution of the Talkdedsec code
+editor (the "Software"). By installing or using the Software you accept these
+terms. If you do not accept them, do not install or use the Software.
+
+The Software is NOT OPEN SOURCE. Its source code is not published, and this
+agreement grants you no rights to the source code.
+
+2. GRANT OF RIGHTS
+
+a) Personal use: You may install and use the Software free of charge for
+   individual, non-commercial purposes, without a limit on the number of
+   installations.
+
+b) Commercial use: Using the Software on behalf of a business, for revenue-
+   generating work, or within an organisation requires a valid license key. A
+   license key is limited to the number of users and devices stated at purchase.
+
+c) Evaluation: You may use the Software for a reasonable evaluation period
+   before purchasing a commercial license.
+
+3. RESTRICTIONS
+
+You may not:
+
+a) Redistribute, sell, rent, lend, sublicense or otherwise make the Software
+   available to third parties.
+b) Reverse engineer, decompile or disassemble the Software, except to the extent
+   applicable law overrides this restriction.
+c) Disable, circumvent or modify any license validation, integrity checking or
+   copy protection mechanism.
+d) Remove or alter any copyright notice, trademark or this agreement.
+e) Create and distribute a derivative product based on the Software.
+
+4. THIRD-PARTY COMPONENTS
+
+The Software includes third-party open-source components distributed under their
+own licenses. Their copyright notices and license texts are included with the
+Software and listed in the THIRD-PARTY-NOTICES file. For those components, the
+terms of the applicable open-source license take precedence over this agreement.
+
+5. DATA AND PRIVACY
+
+The Software collects no telemetry and contacts no server at startup. It works
+fully offline. Update checking is off by default and makes network requests only
+when the user turns it on.
+
+If you choose to use the AI agent embedded in the Software, those requests go to
+the relevant provider through your own account and are governed by that
+provider's privacy policy. This is an action you initiate.
+
+6. DISCLAIMER OF WARRANTY
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+
+7. LIMITATION OF LIABILITY
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE COPYRIGHT HOLDER SHALL NOT
+BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL OR CONSEQUENTIAL DAMAGES
+ARISING FROM THE USE OF OR INABILITY TO USE THE SOFTWARE.
+
+8. TERMINATION
+
+The rights granted to you terminate automatically if you breach these terms. Upon
+termination you must delete all copies of the Software.
+
+9. GOVERNING LAW
+
+This agreement is governed by the laws of the Republic of Türkiye.
+
+10. CONTACT
+
+https://code.talkdedsec.com
+https://github.com/talkdedseccode/talkdedsec-editor
