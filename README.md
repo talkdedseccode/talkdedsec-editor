@@ -88,8 +88,8 @@ choosing to do rather than something the editor does behind your back.
 
 ## License
 
-The editor is closed source and ships under [terms of use](LICENSE): free for personal use, a license
-key for commercial use, no redistribution.
+The editor is closed source and ships under [terms of use](LICENSE): free to use on as many machines
+as you like, no redistribution, no reverse engineering.
 
 It's built on an open-source editor core. That project's copyright notice and MIT license text are
 reproduced in full in [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md), along with everything else
@@ -160,8 +160,8 @@ arkandan yaptığı bir şey değil.
 
 ### Lisans
 
-Editör kapalı kaynak ve [kullanım şartlarıyla](LICENSE) dağıtılıyor: kişisel kullanım ücretsiz, ticari
-kullanım lisans anahtarı istiyor, yeniden dağıtım yok.
+Editör kapalı kaynak ve [kullanım şartlarıyla](LICENSE) dağıtılıyor: istediğin kadar makinede ücretsiz
+kullanabilirsin; yeniden dağıtım ve tersine mühendislik yok.
 
 Açık kaynak bir editör çekirdeği üzerine kurulu. O projenin telif bildirimi ve MIT lisans metni,
 pakete giren diğer her şeyle birlikte [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md) içinde tam
