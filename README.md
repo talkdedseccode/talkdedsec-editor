@@ -1,222 +1,170 @@
-# Talkdedsec Editor
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/talkdedseccode/talkdedsec-editor/main/assets/banner-dark.svg">
+  <img src="https://raw.githubusercontent.com/talkdedseccode/talkdedsec-editor/main/assets/banner-light.svg" width="100%" alt="Talkdedsec editor — boots in 0.41 s, 9 processes, 64 extensions, 0 telemetry, 0 source maps.">
+</picture>
 
-Windows için masaüstü kod editörü. Telemetri yok, hesap yok, arka planda çalışan servis yok.
-Kurulum dosyası [Releases](https://github.com/talkdedseccode/talkdedsec-editor/releases/latest) üzerinden dağıtılır.
+<p align="center">
+  <a href="https://code.talkdedsec.com"><b>code.talkdedsec.com</b></a>
+  &nbsp;·&nbsp;
+  <a href="https://github.com/talkdedseccode/talkdedsec-editor/releases/latest"><b>download</b></a>
+  &nbsp;·&nbsp;
+  <a href="https://github.com/talkdedseccode/talkdedsec-editor/discussions"><b>forum</b></a>
+  &nbsp;·&nbsp;
+  <a href="https://github.com/talkdedseccode/talkdedsec-themes"><b>themes</b></a>
+</p>
 
-**[Site](https://code.talkdedsec.com)** · **[İndir](https://github.com/talkdedseccode/talkdedsec-editor/releases/latest)** · **[Forum](https://github.com/talkdedseccode/talkdedsec-editor/discussions)** · **[Temalar](https://github.com/talkdedseccode/talkdedsec-themes)**
+<br>
 
-[English below ↓](#talkdedsec-editor-english)
+## What this is
 
----
+A code editor for Windows, built on an open-source editor core with the parts I never used taken out.
 
-## Nedir
+Telemetry didn't get a setting, it got removed from the source. There's no update server to point at,
+because there isn't one. Thirty-four built-in extensions are gone. Nothing contacts a server when you
+open it, which is another way of saying it behaves the same offline as online.
 
-Açık kaynak bir editör çekirdeğinin çatallanmasıdır. Değişen şey davranıştır: veri toplayan uç noktalar
-kaldırıldı, ihtiyaç duyulmayan yerleşik eklentiler çıkarıldı, dağıtımdan source map'ler atıldı.
-Editörün kendisi tanıdık kalır — aynı kısayollar, aynı eklenti biçimi, aynı ayar dosyası.
+It installs into your user folder. It never asks for administrator rights, and it doesn't touch your
+existing editor's settings — the two run side by side on the same project.
 
-Üst projeye atıf ve lisans bilgisi için [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md) dosyasına bakın.
-
-## Ölçülen değerler
-
-Sürüm 1.130.0, Windows x64. Rakamlar soğuk profille (eklenti yüklü değil, ayar geçmişi yok) ölçüldü.
-
-| Ölçüm | Değer |
-| --- | --- |
-| Açılıştan kullanılabilir pencereye | 0,41 sn |
-| Süreç sayısı | 9 |
-| Boşta bellek kullanımı | 1,40 GB |
-| Diskte kurulu boyut | 1,12 GB |
-| Kurulum dosyası | 253 MB |
-| Yerleşik eklenti | 64 (üst projede 98) |
-| Telemetri uç noktası | 0 |
-| Dağıtımdaki source map | 0 |
-| Yerleşik tema | 5 |
-
-Kendi makinenizde farklı sonuç alabilirsiniz; açılış süresi diske, boştaki bellek ise açık klasöre
-ve yüklü eklentilere göre değişir.
-
-## Kurulum
-
-1. [Releases sayfasından](https://github.com/talkdedseccode/talkdedsec-editor/releases/latest) `.exe` kurulum dosyasını indirin.
-2. Çalıştırın. Kurulum **kullanıcı düzeyindedir** — yönetici hakkı istemez, `Program Files` altına yazmaz,
-   sisteme servis veya sürücü kurmaz.
-3. Kaldırmak için Windows "Uygulamalar ve özellikler" listesinden kaldırın.
-
-Kurulum dosyası bu depodaki Releases dışında hiçbir yerde dağıtılmaz. Başka bir kaynaktan indirdiğiniz
-dosya bizim yayınımız değildir.
-
-## Gizlilik duruşu
-
-| Konu | Durum |
-| --- | --- |
-| Kullanım/çökme telemetrisi | Gönderilmez — uç nokta bulunmaz |
-| Hesap açma, oturum açma | Gerekmez |
-| Arka plan güncelleme servisi | Kurulmaz |
-| Deneysel özellik / uzaktan bayrak çekme | Yok |
-| Eklenti mağazası | Open VSX |
-| Gömülü ajan (Claude) | Yalnızca siz başlattığınızda, **kendi aboneliğinizle** çalışır |
-
-Gömülü ajanı kullandığınızda istekler doğrudan sizin sağlayıcı hesabınız üzerinden gider; araya biz
-girmeyiz, bir sunucumuzdan geçmez. Ajanı hiç kullanmazsanız editör tamamen çevrimdışı çalışır.
-
-Güncellemeleri kendiniz alırsınız: yeni sürüm çıktığında Releases'te yayımlanır, editör kendi kendine
-indirmeye çalışmaz. Sürüm bildirimi için depoyu **Watch → Releases only** ile izleyebilirsiniz.
-
-## Temalar
-
-5 tema yerleşik gelir. Her tema 183 renk anahtarı ve 16 renkli terminal paleti tanımlar — yani arayüzün
-tamamı ve terminal, yarım kalmış bir tema gibi karışık görünmez.
-
-Tema dosyaları standart biçimdedir:
-
-```jsonc
-{
-  "name": "tema-adi",
-  "type": "dark",
-  "colors": {
-    "editor.background": "#0b0d10",
-    "editor.foreground": "#d7dae0",
-    "terminal.ansiRed": "#e06c75"
-  },
-  "tokenColors": [
-    { "scope": "comment", "settings": { "foreground": "#5c6370" } }
-  ]
-}
-```
-
-Kendi temanızı paylaşmak, mevcut bir temada renk düzeltmek veya yeni tema önermek için
-**[talkdedsec-themes](https://github.com/talkdedseccode/talkdedsec-themes)** deposunu kullanın.
-Tema ile ilgili issue'lar bu depoda değil, orada açılır.
-
-## Forum ve destek
-
-Sitedeki forum bu deponun **[Discussions](https://github.com/talkdedseccode/talkdedsec-editor/discussions)**
-bölümünü okur. Yani buraya yazdığınız gönderi sitede de görünür.
-
-| Ne | Nereye |
-| --- | --- |
-| Çöküyor, hatalı davranıyor | [Issues → Hata bildirimi](https://github.com/talkdedseccode/talkdedsec-editor/issues/new?template=hata_bildirimi.yml) |
-| Şu özellik olsun | [Issues → Özellik isteği](https://github.com/talkdedseccode/talkdedsec-editor/issues/new?template=ozellik_istegi.yml) |
-| Soru, kullanım, "nasıl yapılır" | [Discussions → Q&A](https://github.com/talkdedseccode/talkdedsec-editor/discussions/categories/q-a) |
-| Güvenlik açığı | [SECURITY.md](SECURITY.md) — herkese açık issue açmayın |
-| Tema | [talkdedsec-themes](https://github.com/talkdedseccode/talkdedsec-themes) |
-
-Katkı kuralları: [CONTRIBUTING.md](CONTRIBUTING.md) · Davranış kuralları: [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)
-
-## Lisans
-
-MIT — [LICENSE](LICENSE). Üst projenin ve birlikte dağıtılan bileşenlerin lisansları
-[THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md) dosyasındadır.
-
----
-
-<a id="talkdedsec-editor-english"></a>
-
-# Talkdedsec Editor (English)
-
-A desktop code editor for Windows. No telemetry, no account, no background service.
-The installer is distributed through [Releases](https://github.com/talkdedseccode/talkdedsec-editor/releases/latest).
-
-**[Website](https://code.talkdedsec.com)** · **[Download](https://github.com/talkdedseccode/talkdedsec-editor/releases/latest)** · **[Forum](https://github.com/talkdedseccode/talkdedsec-editor/discussions)** · **[Themes](https://github.com/talkdedseccode/talkdedsec-themes)**
-
-## What it is
-
-A fork of an open-source editor core. What changed is behaviour: data-collecting endpoints were removed,
-built-in extensions that were not needed were dropped, and source maps were excluded from the build.
-The editor itself stays familiar — same shortcuts, same extension format, same settings file.
-
-Upstream attribution and licensing: see [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md).
-
-## Measured numbers
-
-Version 1.130.0, Windows x64. Measured on a cold profile (no extensions installed, no settings history).
-
-| Measurement | Value |
-| --- | --- |
-| Launch to usable window | 0.41 s |
-| Process count | 9 |
-| Idle memory usage | 1.40 GB |
-| Installed size on disk | 1.12 GB |
-| Installer size | 253 MB |
-| Built-in extensions | 64 (98 upstream) |
-| Telemetry endpoints | 0 |
-| Source maps shipped | 0 |
-| Built-in themes | 5 |
-
-Your machine may report different figures; launch time depends on the disk, and idle memory depends on
-the folder you open and the extensions you install.
+<br>
 
 ## Install
 
-1. Download the `.exe` installer from [Releases](https://github.com/talkdedseccode/talkdedsec-editor/releases/latest).
-2. Run it. The install is **user-level** — no administrator rights, nothing written to `Program Files`,
-   no service or driver installed.
-3. To remove it, uninstall from Windows "Apps & features".
+Download the installer from [Releases](https://github.com/talkdedseccode/talkdedsec-editor/releases/latest)
+and run it. Windows SmartScreen will warn you the first time; the package isn't code-signed yet, so
+choose **More info → Run anyway** if you're comfortable with that.
 
-The installer is not distributed anywhere except the Releases page of this repository. A file obtained
-from any other source is not our build.
+```
+%LOCALAPPDATA%\Programs\Talkdedsec\Talkdedsec.exe
+```
 
-## Privacy stance
+Settings, extensions and session history live in a `.talkdedsec` folder of their own. Extensions come
+from [Open VSX](https://open-vsx.org). A few Marketplace-only ones — C#, Pylance, the Remote-* family —
+aren't published there and won't be available.
 
-| Topic | Status |
-| --- | --- |
-| Usage / crash telemetry | Not sent — no endpoint present |
-| Sign-up, sign-in | Not required |
-| Background updater service | Not installed |
-| Experiments / remote feature flags | None |
-| Extension marketplace | Open VSX |
-| Embedded agent (Claude) | Runs only when you start it, on **your own subscription** |
+There is no auto-update. When a new version ships, you download it and install over the top; your
+settings survive.
 
-When you use the embedded agent, requests go through your own provider account; we are not in the middle
-and nothing passes through a server of ours. If you never use the agent, the editor runs fully offline.
-
-Updates are pull-only: new versions are published to Releases, and the editor does not fetch them on its
-own. Use **Watch → Releases only** on this repository to get notified.
+<br>
 
 ## Themes
 
-Five themes ship built in. Each defines 183 colour keys plus a 16-colour terminal palette, so the whole
-UI and the terminal are covered rather than half-themed.
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/talkdedseccode/talkdedsec-editor/main/assets/themes-dark.svg">
+  <img src="https://raw.githubusercontent.com/talkdedseccode/talkdedsec-editor/main/assets/themes-light.svg" width="100%" alt="Five built-in themes — Dark, Midnight, Matrix, Ember, Light — with their real backgrounds and terminal palettes">
+</picture>
 
-Theme files use the standard format:
+Five ship with the editor. Each one covers 183 color keys and a full 16-colour terminal palette, so
+switching doesn't leave the panels, git marks and terminal looking like the theme you just left.
 
-```jsonc
-{
-  "name": "theme-name",
-  "type": "dark",
-  "colors": {
-    "editor.background": "#0b0d10",
-    "editor.foreground": "#d7dae0",
-    "terminal.ansiRed": "#e06c75"
-  },
-  "tokenColors": [
-    { "scope": "comment", "settings": { "foreground": "#5c6370" } }
-  ]
-}
-```
+Switch with <kbd>Ctrl</kbd>+<kbd>K</kbd> then <kbd>Ctrl</kbd>+<kbd>T</kbd>. To make your own, run
+**Generate Color Theme From Current Settings** from the command palette and
+[send it to the themes repo](https://github.com/talkdedseccode/talkdedsec-themes) — a pull request is
+all it takes, no account signup.
 
-To share a theme, fix colours in an existing one, or propose a new theme, use the
-**[talkdedsec-themes](https://github.com/talkdedseccode/talkdedsec-themes)** repository.
-Theme issues belong there, not here.
+<br>
 
-## Forum and support
+## The agent
 
-The forum on the website reads this repository's
-**[Discussions](https://github.com/talkdedseccode/talkdedsec-editor/discussions)**. A post you write here
-also appears on the site.
+An agent runs inside the editor core. Nothing to install, no second app to switch to. Press
+<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>J</kbd> to open a session; agent sessions also get their own window.
 
-| What | Where |
-| --- | --- |
-| Crash or wrong behaviour | [Issues → Bug report](https://github.com/talkdedseccode/talkdedsec-editor/issues/new?template=hata_bildirimi.yml) |
-| Feature request | [Issues → Feature request](https://github.com/talkdedseccode/talkdedsec-editor/issues/new?template=ozellik_istegi.yml) |
-| Question, usage, how-to | [Discussions → Q&A](https://github.com/talkdedseccode/talkdedsec-editor/discussions/categories/q-a) |
-| Security vulnerability | [SECURITY.md](SECURITY.md) — do not open a public issue |
-| Themes | [talkdedsec-themes](https://github.com/talkdedseccode/talkdedsec-themes) |
+You connect with your own account. There's no seat fee, no token markup and no service sitting in the
+middle. That also means the requests go to your provider under your own terms, which is a thing you're
+choosing to do rather than something the editor does behind your back.
 
-Contribution rules: [CONTRIBUTING.md](CONTRIBUTING.md) · Code of conduct: [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)
+<br>
+
+## Where to go
+
+| | |
+|:---|:---|
+| Something's broken | [Issues](https://github.com/talkdedseccode/talkdedsec-editor/issues) |
+| A question | [Discussions → Q&A](https://github.com/talkdedseccode/talkdedsec-editor/discussions/categories/q-a) |
+| A theme you made | [talkdedsec-themes](https://github.com/talkdedseccode/talkdedsec-themes) |
+| A security problem | [Security advisory](https://github.com/talkdedseccode/talkdedsec-editor/security/advisories/new) — please don't open a public issue |
+
+<br>
 
 ## License
 
-MIT — [LICENSE](LICENSE). Licenses of the upstream project and bundled components are in
-[THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md).
+The editor is closed source and ships under [terms of use](LICENSE): free for personal use, a license
+key for commercial use, no redistribution.
+
+It's built on an open-source editor core. That project's copyright notice and MIT license text are
+reproduced in full in [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md), along with everything else
+bundled in the package.
+
+<br>
+
+<details>
+<summary><b>Türkçe</b></summary>
+
+<br>
+
+### Nedir
+
+Windows için bir kod editörü. Açık kaynak bir editör çekirdeği üzerine kuruldu; kullanmadığım parçalar
+söküldü.
+
+Telemetriye ayar konmadı, kaynaktan kaldırıldı. Gösterilecek bir güncelleme sunucusu yok, çünkü hiç yok.
+Otuz dört yerleşik eklenti gitti. Açtığında hiçbir sunucuya bağlanmıyor; yani çevrimdışıyken de
+çevrimiçiyken de aynı davranıyor.
+
+Kullanıcı klasörüne kuruluyor. Yönetici hakkı istemiyor ve mevcut editörünün ayarlarına dokunmuyor —
+ikisi aynı projede yan yana çalışıyor.
+
+### Kurulum
+
+Kurulum dosyasını [Releases](https://github.com/talkdedseccode/talkdedsec-editor/releases/latest)
+sayfasından indir ve çalıştır. Windows SmartScreen ilk seferde uyarır; paket henüz imzalı olmadığı için
+sakıncası yoksa **Daha fazla bilgi → Yine de çalıştır** de.
+
+```
+%LOCALAPPDATA%\Programs\Talkdedsec\Talkdedsec.exe
+```
+
+Ayarların, eklentilerin ve oturum geçmişin kendi `.talkdedsec` klasöründe duruyor. Eklentiler
+[Open VSX](https://open-vsx.org) üzerinden geliyor. Yalnız Marketplace'te olan birkaçı — C#, Pylance,
+Remote-* ailesi — orada yayınlanmadığı için bulunmayacak.
+
+Otomatik güncelleme yok. Yeni sürüm çıkınca indirip üzerine kuruyorsun; ayarların duruyor.
+
+### Temalar
+
+Beş tema geliyor. Her biri 183 renk anahtarı ve tam 16 renklik terminal paleti kapsıyor; tema
+değişince paneller, git işaretleri ve terminal az önce bıraktığın temada kalmıyor.
+
+Değiştirmek için <kbd>Ctrl</kbd>+<kbd>K</kbd> ardından <kbd>Ctrl</kbd>+<kbd>T</kbd>. Kendi temanı
+üretmek için komut paletinden **Generate Color Theme From Current Settings** çalıştır ve
+[tema deposuna gönder](https://github.com/talkdedseccode/talkdedsec-themes) — bir pull request yetiyor,
+hesap açman gerekmiyor.
+
+### Ajan
+
+Ajan editörün çekirdeğinde çalışıyor. Kurulacak bir şey, geçilecek ikinci bir uygulama yok.
+<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>J</kbd> ile oturum açılıyor; ajan oturumlarının kendi penceresi de var.
+
+Kendi hesabınla bağlanıyorsun. Koltuk ücreti, token payı ve araya giren bir servis yok. Bu aynı zamanda
+isteklerin kendi şartlarınla kendi sağlayıcına gittiği anlamına geliyor — senin seçtiğin bir şey, editörün
+arkandan yaptığı bir şey değil.
+
+### Nereye gidilir
+
+| | |
+|:---|:---|
+| Bir şey bozuk | [Issues](https://github.com/talkdedseccode/talkdedsec-editor/issues) |
+| Soru | [Discussions → Q&A](https://github.com/talkdedseccode/talkdedsec-editor/discussions/categories/q-a) |
+| Yazdığın tema | [talkdedsec-themes](https://github.com/talkdedseccode/talkdedsec-themes) |
+| Güvenlik açığı | [Güvenlik bildirimi](https://github.com/talkdedseccode/talkdedsec-editor/security/advisories/new) — herkese açık issue açma |
+
+### Lisans
+
+Editör kapalı kaynak ve [kullanım şartlarıyla](LICENSE) dağıtılıyor: kişisel kullanım ücretsiz, ticari
+kullanım lisans anahtarı istiyor, yeniden dağıtım yok.
+
+Açık kaynak bir editör çekirdeği üzerine kurulu. O projenin telif bildirimi ve MIT lisans metni,
+pakete giren diğer her şeyle birlikte [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md) içinde tam
+hâliyle duruyor.
+
+</details>

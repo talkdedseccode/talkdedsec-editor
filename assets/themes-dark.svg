@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1272" height="210" viewBox="0 0 1272 210" role="img" aria-label="Five built-in themes with their real editor background, foreground and terminal palette">
+<title>Built-in themes</title>
+<style>
+  .k{opacity:0;animation:k .6s cubic-bezier(.22,1,.36,1) both}
+  @keyframes k{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+  @media (prefers-reduced-motion:reduce){.k{animation:none;opacity:1;transform:none}}
+</style>
+<rect width="1272" height="210" fill="#0b0b0c"/>
+<g class="k" style="animation-delay:0.00s">
+  <rect x="24" y="20" width="232" height="166" fill="#0B0B0C" stroke="#17181C"/>
+  <text x="42" y="58" font-family="'Segoe UI',Inter,system-ui,-apple-system,Helvetica,Arial,sans-serif" font-size="19" font-weight="600" fill="#C9CDD4">Dark</text>
+  <text x="42" y="82" font-family="ui-monospace,'Cascadia Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="11" letter-spacing="1.6" fill="#C9CDD4" opacity="0.55">#0B0B0C</text>
+  <rect x="42" y="102" width="38" height="7" rx="1.5" fill="#C9CDD4" opacity="0.85"/>
+  <rect x="88" y="102" width="52" height="7" rx="1.5" fill="#C9CDD4" opacity="0.85"/>
+  <rect x="148" y="102" width="24" height="7" rx="1.5" fill="#C9CDD4" opacity="0.85"/>
+  <rect x="180" y="102" width="54" height="7" rx="1.5" fill="#C9CDD4" opacity="0.45"/>
+  <rect x="42" y="118" width="30" height="7" rx="1.5" fill="#C9CDD4" opacity="0.65"/>
+  <rect x="80" y="118" width="62" height="7" rx="1.5" fill="#C9CDD4" opacity="0.65"/>
+  <rect x="150" y="118" width="44" height="7" rx="1.5" fill="#C9CDD4" opacity="0.65"/>
+  <rect x="42" y="142" width="18" height="18" rx="2" fill="#1C1E22"/>
+  <rect x="67" y="142" width="18" height="18" rx="2" fill="#C08585"/>
+  <rect x="92" y="142" width="18" height="18" rx="2" fill="#8FA88F"/>
+  <rect x="117" y="142" width="18" height="18" rx="2" fill="#C4A98A"/>
+  <rect x="142" y="142" width="18" height="18" rx="2" fill="#8A9BB5"/>
+  <rect x="167" y="142" width="18" height="18" rx="2" fill="#A493B0"/>
+  <rect x="192" y="142" width="18" height="18" rx="2" fill="#8FA8A8"/>
+  <rect x="217" y="142" width="18" height="18" rx="2" fill="#A8ADB5"/>
+  <text x="42" y="176" font-family="ui-monospace,'Cascadia Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="10" letter-spacing="1.4" fill="#C9CDD4" opacity="0.42">183 KEYS · 16 ANSI</text>
+</g>
+<g class="k" style="animation-delay:0.09s">
+  <rect x="272" y="20" width="232" height="166" fill="#070A12" stroke="#131B2B"/>
+  <text x="290" y="58" font-family="'Segoe UI',Inter,system-ui,-apple-system,Helvetica,Arial,sans-serif" font-size="19" font-weight="600" fill="#C3CBDA">Midnight</text>
+  <text x="290" y="82" font-family="ui-monospace,'Cascadia Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="11" letter-spacing="1.6" fill="#C3CBDA" opacity="0.55">#070A12</text>
+  <rect x="290" y="102" width="38" height="7" rx="1.5" fill="#C3CBDA" opacity="0.85"/>
+  <rect x="336" y="102" width="52" height="7" rx="1.5" fill="#C3CBDA" opacity="0.85"/>
+  <rect x="396" y="102" width="24" height="7" rx="1.5" fill="#C3CBDA" opacity="0.85"/>
+  <rect x="428" y="102" width="54" height="7" rx="1.5" fill="#C3CBDA" opacity="0.45"/>
+  <rect x="290" y="118" width="30" height="7" rx="1.5" fill="#C3CBDA" opacity="0.65"/>
+  <rect x="328" y="118" width="62" height="7" rx="1.5" fill="#C3CBDA" opacity="0.65"/>
+  <rect x="398" y="118" width="44" height="7" rx="1.5" fill="#C3CBDA" opacity="0.65"/>
+  <rect x="290" y="142" width="18" height="18" rx="2" fill="#141B2A"/>
+  <rect x="315" y="142" width="18" height="18" rx="2" fill="#C0798A"/>
+  <rect x="340" y="142" width="18" height="18" rx="2" fill="#7FAF95"/>
+  <rect x="365" y="142" width="18" height="18" rx="2" fill="#C9A87C"/>
+  <rect x="390" y="142" width="18" height="18" rx="2" fill="#6D93CC"/>
+  <rect x="415" y="142" width="18" height="18" rx="2" fill="#9B8FC4"/>
+  <rect x="440" y="142" width="18" height="18" rx="2" fill="#7FB0BC"/>
+  <rect x="465" y="142" width="18" height="18" rx="2" fill="#A8B4C8"/>
+  <text x="290" y="176" font-family="ui-monospace,'Cascadia Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="10" letter-spacing="1.4" fill="#C3CBDA" opacity="0.42">183 KEYS · 16 ANSI</text>
+</g>
+<g class="k" style="animation-delay:0.18s">
+  <rect x="520" y="20" width="232" height="166" fill="#050806" stroke="#101A14"/>
+  <text x="538" y="58" font-family="'Segoe UI',Inter,system-ui,-apple-system,Helvetica,Arial,sans-serif" font-size="19" font-weight="600" fill="#B8D4BE">Matrix</text>
+  <text x="538" y="82" font-family="ui-monospace,'Cascadia Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="11" letter-spacing="1.6" fill="#B8D4BE" opacity="0.55">#050806</text>
+  <rect x="538" y="102" width="38" height="7" rx="1.5" fill="#B8D4BE" opacity="0.85"/>
+  <rect x="584" y="102" width="52" height="7" rx="1.5" fill="#B8D4BE" opacity="0.85"/>
+  <rect x="644" y="102" width="24" height="7" rx="1.5" fill="#B8D4BE" opacity="0.85"/>
+  <rect x="676" y="102" width="54" height="7" rx="1.5" fill="#B8D4BE" opacity="0.45"/>
+  <rect x="538" y="118" width="30" height="7" rx="1.5" fill="#B8D4BE" opacity="0.65"/>
+  <rect x="576" y="118" width="62" height="7" rx="1.5" fill="#B8D4BE" opacity="0.65"/>
+  <rect x="646" y="118" width="44" height="7" rx="1.5" fill="#B8D4BE" opacity="0.65"/>
+  <rect x="538" y="142" width="18" height="18" rx="2" fill="#101A14"/>
+  <rect x="563" y="142" width="18" height="18" rx="2" fill="#B87A6E"/>
+  <rect x="588" y="142" width="18" height="18" rx="2" fill="#4FBF74"/>
+  <rect x="613" y="142" width="18" height="18" rx="2" fill="#B5B06E"/>
+  <rect x="638" y="142" width="18" height="18" rx="2" fill="#5F9F8A"/>
+  <rect x="663" y="142" width="18" height="18" rx="2" fill="#8FA37F"/>
+  <rect x="688" y="142" width="18" height="18" rx="2" fill="#6FBFA0"/>
+  <rect x="713" y="142" width="18" height="18" rx="2" fill="#A8C4AE"/>
+  <text x="538" y="176" font-family="ui-monospace,'Cascadia Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="10" letter-spacing="1.4" fill="#B8D4BE" opacity="0.42">183 KEYS · 16 ANSI</text>
+</g>
+<g class="k" style="animation-delay:0.27s">
+  <rect x="768" y="20" width="232" height="166" fill="#0D0906" stroke="#1C150E"/>
+  <text x="786" y="58" font-family="'Segoe UI',Inter,system-ui,-apple-system,Helvetica,Arial,sans-serif" font-size="19" font-weight="600" fill="#DBCDBE">Ember</text>
+  <text x="786" y="82" font-family="ui-monospace,'Cascadia Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="11" letter-spacing="1.6" fill="#DBCDBE" opacity="0.55">#0D0906</text>
+  <rect x="786" y="102" width="38" height="7" rx="1.5" fill="#DBCDBE" opacity="0.85"/>
+  <rect x="832" y="102" width="52" height="7" rx="1.5" fill="#DBCDBE" opacity="0.85"/>
+  <rect x="892" y="102" width="24" height="7" rx="1.5" fill="#DBCDBE" opacity="0.85"/>
+  <rect x="924" y="102" width="54" height="7" rx="1.5" fill="#DBCDBE" opacity="0.45"/>
+  <rect x="786" y="118" width="30" height="7" rx="1.5" fill="#DBCDBE" opacity="0.65"/>
+  <rect x="824" y="118" width="62" height="7" rx="1.5" fill="#DBCDBE" opacity="0.65"/>
+  <rect x="894" y="118" width="44" height="7" rx="1.5" fill="#DBCDBE" opacity="0.65"/>
+  <rect x="786" y="142" width="18" height="18" rx="2" fill="#1C150E"/>
+  <rect x="811" y="142" width="18" height="18" rx="2" fill="#C0736B"/>
+  <rect x="836" y="142" width="18" height="18" rx="2" fill="#9FB57A"/>
+  <rect x="861" y="142" width="18" height="18" rx="2" fill="#D0A05F"/>
+  <rect x="886" y="142" width="18" height="18" rx="2" fill="#B08A5F"/>
+  <rect x="911" y="142" width="18" height="18" rx="2" fill="#B58A7A"/>
+  <rect x="936" y="142" width="18" height="18" rx="2" fill="#B5A57F"/>
+  <rect x="961" y="142" width="18" height="18" rx="2" fill="#C4B5A3"/>
+  <text x="786" y="176" font-family="ui-monospace,'Cascadia Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="10" letter-spacing="1.4" fill="#DBCDBE" opacity="0.42">183 KEYS · 16 ANSI</text>
+</g>
+<g class="k" style="animation-delay:0.36s">
+  <rect x="1016" y="20" width="232" height="166" fill="#FBFBFC" stroke="#E2E4E9"/>
+  <text x="1034" y="58" font-family="'Segoe UI',Inter,system-ui,-apple-system,Helvetica,Arial,sans-serif" font-size="19" font-weight="600" fill="#26282D">Light</text>
+  <text x="1034" y="82" font-family="ui-monospace,'Cascadia Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="11" letter-spacing="1.6" fill="#26282D" opacity="0.55">#FBFBFC</text>
+  <rect x="1034" y="102" width="38" height="7" rx="1.5" fill="#26282D" opacity="0.85"/>
+  <rect x="1080" y="102" width="52" height="7" rx="1.5" fill="#26282D" opacity="0.85"/>
+  <rect x="1140" y="102" width="24" height="7" rx="1.5" fill="#26282D" opacity="0.85"/>
+  <rect x="1172" y="102" width="54" height="7" rx="1.5" fill="#26282D" opacity="0.45"/>
+  <rect x="1034" y="118" width="30" height="7" rx="1.5" fill="#26282D" opacity="0.65"/>
+  <rect x="1072" y="118" width="62" height="7" rx="1.5" fill="#26282D" opacity="0.65"/>
+  <rect x="1142" y="118" width="44" height="7" rx="1.5" fill="#26282D" opacity="0.65"/>
+  <rect x="1034" y="142" width="18" height="18" rx="2" fill="#26282D"/>
+  <rect x="1059" y="142" width="18" height="18" rx="2" fill="#B03A3A"/>
+  <rect x="1084" y="142" width="18" height="18" rx="2" fill="#3F6B4F"/>
+  <rect x="1109" y="142" width="18" height="18" rx="2" fill="#8A6A20"/>
+  <rect x="1134" y="142" width="18" height="18" rx="2" fill="#3B5A8C"/>
+  <rect x="1159" y="142" width="18" height="18" rx="2" fill="#7A4A8C"/>
+  <rect x="1184" y="142" width="18" height="18" rx="2" fill="#2F6B6B"/>
+  <rect x="1209" y="142" width="18" height="18" rx="2" fill="#B8BCC4"/>
+  <text x="1034" y="176" font-family="ui-monospace,'Cascadia Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="10" letter-spacing="1.4" fill="#26282D" opacity="0.42">183 KEYS · 16 ANSI</text>
+</g>
+</svg>
