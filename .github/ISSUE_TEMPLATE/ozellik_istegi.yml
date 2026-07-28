@@ -1,0 +1,75 @@
+name: Özellik isteği / Feature request
+description: Editörde olmasını istediğiniz bir davranış ya da yetenek / A behaviour or capability you want
+title: "[Özellik] "
+labels: ["ozellik-istegi"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Ne istediğinizden çok **hangi sorunu yaşadığınızı** yazın; çözüm sizin düşündüğünüzden farklı
+        olabilir. Tema istekleri [talkdedsec-themes](https://github.com/talkdedseccode/talkdedsec-themes)
+        deposuna açılır.
+
+        _Describe the problem you have, not only the solution you pictured — the fix may look different.
+        Theme requests belong in the talkdedsec-themes repo._
+
+  - type: checkboxes
+    id: on_kontrol
+    attributes:
+      label: Ön kontrol / Before you file
+      options:
+        - label: Açık issue'larda aynı isteği aradım / I searched existing issues
+          required: true
+        - label: >-
+            Bu istek telemetri, zorunlu hesap, arka plan güncelleme servisi ya da uzaktan yönetilen
+            deneysel bayrak içermiyor / This does not ask for telemetry, mandatory accounts, a background
+            updater service or remote feature flags
+          required: true
+
+  - type: textarea
+    id: sorun
+    attributes:
+      label: Sorun / The problem
+      description: |
+        Neyi yapmaya çalışıyorsunuz ve nerede tıkanıyorsunuz?
+        _What are you trying to do, and where do you get stuck?_
+      placeholder: "... yapmaya çalışırken şu adımda her seferinde elle ... yapmak zorunda kalıyorum."
+    validations:
+      required: true
+
+  - type: textarea
+    id: onerilen
+    attributes:
+      label: Önerdiğiniz çözüm / Proposed solution
+      description: Aklınızdaki çözüm varsa yazın / If you have one in mind
+    validations:
+      required: false
+
+  - type: textarea
+    id: alternatif
+    attributes:
+      label: Şu an ne yapıyorsunuz? / Current workaround
+      description: |
+        Denediğiniz başka yollar, kullandığınız geçici çözüm veya bunu yapan bir eklenti var mı?
+        _Other approaches you tried, a workaround you use, or an extension that already does this._
+    validations:
+      required: false
+
+  - type: dropdown
+    id: etki
+    attributes:
+      label: Sizin için ne kadar önemli? / How much does this matter to you?
+      options:
+        - "Olmadan da çalışabiliyorum / I can work without it"
+        - "Her gün vakit kaybettiriyor / Costs me time every day"
+        - "Bu olmadan editörü kullanamıyorum / Blocks me from using the editor"
+    validations:
+      required: true
+
+  - type: input
+    id: surum
+    attributes:
+      label: Kullandığınız sürüm / Version you use
+      placeholder: "1.130.0"
+    validations:
+      required: false

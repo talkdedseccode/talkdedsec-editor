@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Soru sor — Discussions Q&A / Ask a question
+    url: https://github.com/talkdedseccode/talkdedsec-editor/discussions/categories/q-a
+    about: "Kullanım, kurulum, \"nasıl yapılır\" soruları buraya. Soru için issue açmayın. / Usage, install and how-to questions go here, not to Issues."
+  - name: Fikir ve sohbet — Discussions / Ideas and general talk
+    url: https://github.com/talkdedseccode/talkdedsec-editor/discussions
+    about: "Sitedeki forum burayı okur. / The forum on the website reads this."
+  - name: Tema deposu / Themes repository
+    url: https://github.com/talkdedseccode/talkdedsec-themes
+    about: "Tema önerisi, tema hatası ve kendi temanızı paylaşmak için. / For theme proposals, theme bugs and sharing your own."
+  - name: Güvenlik açığı bildir / Report a security vulnerability
+    url: https://github.com/talkdedseccode/talkdedsec-editor/security/advisories/new
+    about: "Özel kanal. Güvenlik açığı için herkese açık issue açmayın. / Private channel. Never open a public issue for a vulnerability."

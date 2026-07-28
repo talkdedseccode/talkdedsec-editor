@@ -1,0 +1,119 @@
+name: Hata bildirimi / Bug report
+description: Editör çöküyor, donuyor ya da yanlış davranıyor / The editor crashes, freezes or misbehaves
+title: "[Hata] "
+labels: ["hata"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Soru sormak için bu formu kullanmayın.** Sorular
+        [Discussions → Q&A](https://github.com/talkdedseccode/talkdedsec-editor/discussions/categories/q-a)
+        bölümüne gider. Güvenlik açığı için [SECURITY.md](https://github.com/talkdedseccode/talkdedsec-editor/blob/main/SECURITY.md)
+        yolunu izleyin, buraya yazmayın. Tema sorunları
+        [talkdedsec-themes](https://github.com/talkdedseccode/talkdedsec-themes) deposuna açılır.
+
+        _Do not use this form to ask a question; questions go to Discussions → Q&A. For security
+        vulnerabilities follow SECURITY.md instead. Theme issues belong in the talkdedsec-themes repo._
+
+  - type: checkboxes
+    id: on_kontrol
+    attributes:
+      label: Ön kontrol / Before you file
+      options:
+        - label: Açık issue'larda aynı sorunu aradım / I searched existing issues
+          required: true
+        - label: Bu bir güvenlik açığı değil / This is not a security vulnerability
+          required: true
+
+  - type: input
+    id: surum
+    attributes:
+      label: Editör sürümü / Editor version
+      description: "Yardım → Hakkında ekranındaki sürüm / From Help → About"
+      placeholder: "1.130.0"
+    validations:
+      required: true
+
+  - type: input
+    id: windows
+    attributes:
+      label: Windows sürümü / Windows version
+      description: "winver komutunun gösterdiği sürüm ve derleme / Version and build shown by winver"
+      placeholder: "Windows 11 Pro 24H2 (26100.2314) x64"
+    validations:
+      required: true
+
+  - type: textarea
+    id: adimlar
+    attributes:
+      label: Yeniden üretme adımları / Steps to reproduce
+      description: |
+        Sıfırdan başlayan, numaralı adımlar yazın. Sizde olan hatayı bizim de görebilmemiz gerekiyor.
+        _Numbered steps starting from a clean state. We need to be able to see the same bug._
+      placeholder: |
+        1. Editörü aç
+        2. Boş bir klasör aç
+        3. ...
+        4. Hata görünüyor
+    validations:
+      required: true
+
+  - type: textarea
+    id: beklenen
+    attributes:
+      label: Beklenen davranış / Expected behaviour
+    validations:
+      required: true
+
+  - type: textarea
+    id: gerceklesen
+    attributes:
+      label: Gerçekleşen davranış / Actual behaviour
+      description: Çökme varsa nasıl çöktüğünü de yazın / If it crashes, describe how
+    validations:
+      required: true
+
+  - type: dropdown
+    id: eklentisiz
+    attributes:
+      label: Eklentiler kapalıyken de oluyor mu? / Does it happen with extensions disabled?
+      description: |
+        Sorun kurduğunuz bir eklentiden geliyorsa o eklentinin deposuna bildirilmesi gerekir.
+        _If the cause is an extension you installed, it must be reported to that extension's repo._
+      options:
+        - "Evet, eklentiler kapalıyken de oluyor / Yes, still happens"
+        - "Hayır, eklentiler kapalıyken olmuyor / No, it stops happening"
+        - "Denemedim / I did not test"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: siklik
+    attributes:
+      label: Ne sıklıkla oluyor? / How often?
+      options:
+        - "Her seferinde / Every time"
+        - "Çoğu zaman / Most of the time"
+        - "Ara sıra / Sometimes"
+        - "Bir kez oldu / Happened once"
+    validations:
+      required: true
+
+  - type: textarea
+    id: gunluk
+    attributes:
+      label: Günlük / hata çıktısı — Logs
+      description: |
+        Yardım → Geliştirici Araçlarını Aç → Console, ya da çıktı panelindeki hata metni.
+        _Help → Toggle Developer Tools → Console, or the error text from the output panel._
+      render: shell
+    validations:
+      required: false
+
+  - type: textarea
+    id: ek
+    attributes:
+      label: Ek bilgi / Anything else
+      description: Ekran görüntüsü, örnek dosya, notlar / Screenshots, sample files, notes
+    validations:
+      required: false
