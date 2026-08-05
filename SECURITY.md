@@ -43,7 +43,7 @@ süre yazmaktansa bunu açıkça söylemeyi tercih ediyoruz. Bildiriminiz sıray
 | --- | --- |
 | Editörün kendisi (bu depodan yayımlanan yapı) | Open VSX'ten kurduğunuz üçüncü taraf eklentiler |
 | Releases'teki kurulum dosyası, kurulum davranışı | Üst projede bulunan ve henüz üst projede düzeltilmemiş açıklar |
-| `code.talkdedsec.com` sitesi | Gömülü ajanın bağlandığı sağlayıcı servisi (Anthropic'e bildirin) |
+| `code.talkdedsec.com` sitesi | Gömülü ajanın bağlandığı sağlayıcı servisi (ilgili sağlayıcıya bildirin) |
 | Bu depodaki yapılandırma ve iş akışı dosyaları | Sosyal mühendislik, fiziksel erişim, DoS senaryoları |
 
 Üst projeden devralınan bir açık bulursanız yine de bize haber verin; hem yapımızı etkileyip
@@ -59,6 +59,10 @@ yayımlanmaz — güncel sürüme geçin.
 Kurulum dosyası yalnızca bu deponun [Releases](https://github.com/talkdedseccode/talkdedsec-editor/releases)
 sayfasından dağıtılır. Başka bir siteden, aynalardan veya paylaşım bağlantılarından indirdiğiniz dosya
 bizim yayınımız değildir; böyle bir dağıtım görürseniz bildirin.
+
+Paket henüz kod imzalı değildir. Çalıştırmadan önce SHA-256 özetini README'deki değer ve
+[`checksums/`](checksums/) altındaki sürüme özel dosyayla doğrulayın. Özet eşleşmiyorsa dosyayı
+çalıştırmayın ve özel güvenlik bildirimi açın.
 
 ---
 
@@ -106,7 +110,7 @@ There is no bug bounty; we cannot offer monetary rewards.
 | --- | --- |
 | The editor itself (builds published from this repository) | Third-party extensions you install from Open VSX |
 | The installer on Releases and its install behaviour | Upstream vulnerabilities not yet fixed upstream |
-| The `code.talkdedsec.com` website | The provider service the embedded agent connects to (report to Anthropic) |
+| The `code.talkdedsec.com` website | The provider service the embedded agent connects to (report it to the relevant provider) |
 | Configuration and workflow files in this repository | Social engineering, physical access, DoS scenarios |
 
 If you find a vulnerability inherited from upstream, tell us anyway; we will check whether our build is
@@ -122,3 +126,7 @@ please update.
 The installer is distributed only from this repository's
 [Releases](https://github.com/talkdedseccode/talkdedsec-editor/releases) page. A file downloaded from
 another site, a mirror or a shared link is not our build; if you see such a distribution, report it.
+
+The package is not code-signed yet. Before running it, verify its SHA-256 digest against the value in
+the README and the version-specific file under [`checksums/`](checksums/). If the digest does not
+match, do not execute the file and open a private security report.
