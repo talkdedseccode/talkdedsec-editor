@@ -31,8 +31,8 @@ existing editor's settings — the two run side by side on the same project.
 ## Install
 
 Download the installer from [Releases](https://github.com/talkdedseccode/talkdedsec-editor/releases/latest)
-and run it. Windows SmartScreen will warn you the first time; the package isn't code-signed yet, so
-choose **More info → Run anyway** if you're comfortable with that.
+and run it. Windows SmartScreen will warn you the first time because the package is not code-signed yet.
+Verify the SHA-256 checksum below before choosing **More info → Run anyway**.
 
 ```
 %LOCALAPPDATA%\Programs\Talkdedsec\Talkdedsec.exe
@@ -44,6 +44,23 @@ aren't published there and won't be available.
 
 There is no auto-update. When a new version ships, you download it and install over the top; your
 settings survive.
+
+### Verify the download
+
+The expected SHA-256 digest for `TalkdedsecSetup.exe` in release `v1.130.0` is:
+
+```text
+3f8a6dda74030e30a85b5f72b327099f31859d5af8b144e6b678e1327d2129a8
+```
+
+PowerShell:
+
+```powershell
+Get-FileHash .\TalkdedsecSetup.exe -Algorithm SHA256
+```
+
+The output must match the digest above exactly. The machine-readable checksum file is
+[`checksums/v1.130.0.sha256`](checksums/v1.130.0.sha256).
 
 <br>
 
@@ -60,7 +77,7 @@ switching doesn't leave the panels, git marks and terminal looking like the them
 Switch with <kbd>Ctrl</kbd>+<kbd>K</kbd> then <kbd>Ctrl</kbd>+<kbd>T</kbd>. To make your own, run
 **Generate Color Theme From Current Settings** from the command palette and
 [send it to the themes repo](https://github.com/talkdedseccode/talkdedsec-themes) — a pull request is
-all it takes, no account signup.
+all it takes; there is no separate account or form.
 
 <br>
 
@@ -117,8 +134,9 @@ ikisi aynı projede yan yana çalışıyor.
 ### Kurulum
 
 Kurulum dosyasını [Releases](https://github.com/talkdedseccode/talkdedsec-editor/releases/latest)
-sayfasından indir ve çalıştır. Windows SmartScreen ilk seferde uyarır; paket henüz imzalı olmadığı için
-sakıncası yoksa **Daha fazla bilgi → Yine de çalıştır** de.
+sayfasından indir ve çalıştır. Paket henüz kod imzalı olmadığı için Windows SmartScreen ilk seferde
+uyarı verir. **Daha fazla bilgi → Yine de çalıştır** seçeneğini kullanmadan önce aşağıdaki SHA-256
+özetini doğrula.
 
 ```
 %LOCALAPPDATA%\Programs\Talkdedsec\Talkdedsec.exe
@@ -130,6 +148,23 @@ Remote-* ailesi — orada yayınlanmadığı için bulunmayacak.
 
 Otomatik güncelleme yok. Yeni sürüm çıkınca indirip üzerine kuruyorsun; ayarların duruyor.
 
+#### İndirmeyi doğrula
+
+`v1.130.0` sürümündeki `TalkdedsecSetup.exe` için beklenen SHA-256 özeti:
+
+```text
+3f8a6dda74030e30a85b5f72b327099f31859d5af8b144e6b678e1327d2129a8
+```
+
+PowerShell:
+
+```powershell
+Get-FileHash .\TalkdedsecSetup.exe -Algorithm SHA256
+```
+
+Çıktı yukarıdaki özetle karakter karakter aynı olmalı. Makine tarafından okunabilir dosya:
+[`checksums/v1.130.0.sha256`](checksums/v1.130.0.sha256).
+
 ### Temalar
 
 Beş tema geliyor. Her biri 183 renk anahtarı ve tam 16 renklik terminal paleti kapsıyor; tema
@@ -137,8 +172,8 @@ değişince paneller, git işaretleri ve terminal az önce bıraktığın temada
 
 Değiştirmek için <kbd>Ctrl</kbd>+<kbd>K</kbd> ardından <kbd>Ctrl</kbd>+<kbd>T</kbd>. Kendi temanı
 üretmek için komut paletinden **Generate Color Theme From Current Settings** çalıştır ve
-[tema deposuna gönder](https://github.com/talkdedseccode/talkdedsec-themes) — bir pull request yetiyor,
-hesap açman gerekmiyor.
+[tema deposuna gönder](https://github.com/talkdedseccode/talkdedsec-themes) — bir pull request yeter;
+ayrı hesap veya form yok.
 
 ### Ajan
 
